@@ -7,7 +7,9 @@
         width: 100%;
         z-index:0;
        }
+
 #img1 {
+
 position: absolute;
 -webkit-box-shadow: 1px 47px 47px 5px rgba(0,0,0,0.43); 
 box-shadow: 1px 47px 47px 5px rgba(0,0,0,0.43);
@@ -15,11 +17,13 @@ background-color:ffbb00;
     left: 22px;
     top: 235px;
      z-index:6;
-  width:80% ;
+    width:55px ;
     height:55px;
-   border-radius: 12%;
+   border-radius: 100%;
 }
+
 #costo {
+
 position: absolute;
 -webkit-box-shadow: 1px 47px 47px 5px rgba(0,0,0,0.43); 
 box-shadow: 1px 47px 47px 5px rgba(0,0,0,0.43);
@@ -31,48 +35,79 @@ background-color:ffbb00;
     height:300px;
    border-radius: 1%;
 }
+
+
+
+
+
 #idbutonmap {
 position: absolute;
 -webkit-box-shadow: 1px 47px 47px 5px rgba(0,0,0,0.43); 
 box-shadow: 1px 47px 47px 5px rgba(0,0,0,0.43);
+
 background-color:4ab572;
+
     left: 22px;
     top: 160px;
     z-index: 5;
-  width:80% ;
+    width:55px ;
     height:55px;
-   border-radius: 12%;
+   border-radius: 100%;
 }
 #idbuton3 {
 position: absolute;
 -webkit-box-shadow: 1px 47px 47px 5px rgba(0,0,0,0.43); 
 box-shadow: 1px 47px 47px 5px rgba(0,0,0,0.43);
+
 background-color:02a4a7;
+
     left: 22px;
     top: 310px;
     z-index: 5;
-    width:80% ;
+    width:55px ;
     height:55px;
-   border-radius: 12%;
+   border-radius: 100%;
 }
+
+
+
 #idbtmoscote {
 position: absolute;
 -webkit-box-shadow: 1px 47px 47px 5px rgba(0,0,0,0.43); 
 box-shadow: 1px 47px 47px 5px rgba(0,0,0,0.43);
+
 background-color:02a4a7;
+
     left: 22px;
     top: 400px;
     z-index: 5;
-    width:80% ;
+    width:55px ;
     height:55px;
-   border-radius: 12%;
+   border-radius: 100%;
 }
+
+
+
+
+
 #demo {
 position: absolute;
+
     left: 222px;
     top: 160px;
     z-index: 5;
 }
+
+
+
+
+
+
+
+
+
+
+
     </style>  <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
   </head>
   <body>
@@ -123,14 +158,44 @@ position: absolute;
 
    
     <script>
+
 function escribetexto(yst){
+
   document.getElementById("idlabel").innerHTML =yst;
 }
+
+
+
+
+
 document.getElementById("map").style.display = "none";
+
+
+
 document.getElementById("idbuton3").style.display = "none";
 document.getElementById("img1").style.display = "none";
 document.getElementById("idbutonmap").style.display = "none";
+
+
 document.getElementById("costo").style.display = "none";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  var w = window.innerWidth;
 var h = window.innerHeight; 
 var vwaze="";
@@ -140,16 +205,24 @@ var vnlatdirecion="";
 var vnlngdirecion="";
 var vnodelnguser="";
 var vnodelatuser="";
+
+
+
 var vreturn="";
 var vid="";
 var vndpadre="";
 var vndhijo="";
+
 var vgetrelojscript="";
+
+
+
 var latm;
 var lngm;
 var latus;
 var lngus;
 var vstxnode="";
+
 function StF(ss){
  return parseFloat(ss);
 }
@@ -164,11 +237,14 @@ latus=StF("4.631045");
 }
 //pp();
  //texto(this.getPosition()+" "+this.title+" a "+this.activom);
+
 //vnodelat=4.6789;
 //vndhijo="uno";
 //vnodelng=-74.135337;
 vndpadre="taxis";
+
   function showAndroidToast(st1,st2,st3,st4) {
+
       // vreturn=  window.Android.showToast(vid,vndpadre,vndhijo);
  //document.getElementById("demo").innerHTML = vreturn;
  if(st1=="coorde"&& true){
@@ -182,22 +258,33 @@ vndpadre=window.Android.showToast("nodep",vndpadre,vndhijo);
 vndhijo=window.Android.showToast("nodeh",vndpadre,vndhijo);
 vwaze=window.Android.showToast("waze",vndpadre,vndhijo);
 vstxnode=window.Android.showToast("btaccionuser",vndpadre,vndhijo);
+
 */
    // vndpadre="taxis";
    // vndhijo="uno";
+
      // vreturn=st2;
     //alert("padre "+st2);
   /*  
 if(vid=="1"){vreturn=  window.Android.showToast(vid,vndpadre,vndhijo);}
   if(vid=="btaccionuser"){vreturn=  window.Android.showToast("btaccionuser",vndpadre,vndhijo);document.getElementById("idlabel").innerHTML = vreturn;
 vndhijo=vreturn;}
+
 if(st1=="3"){ document.getElementById("idlabel").innerHTML = vreturn;}if(st1=="4"){
  document.getElementById("idlabel2").innerHTML = vreturn;}
+
 //document.getElementById("demo").innerHTML = vnodelatuser+" lauylnu "+  vnodelnguser+""vnodelat+""vnodelng;
+
 }
+
+
+
+
+
 if(vid=="gpsllamar"){
 window.Android.showToast("gpsllamar",vndpadre,vndhijo);}
 if(vid=="wazeinciia"){
+
 window.Android.showToast("wazeinciia",vndpadre,vndhijo);}
 if(vid=="getrelojscript"){
 vgetrelojscript=window.Android.showToast("getrelojscript",vndpadre,vndhijo);
@@ -206,25 +293,44 @@ if(vid=="getrelojscript"){
 vstxnode=window.Android.showToast("btaccionuser",vndpadre,vndhijo);
 vndhijo=vstxnode;
 }
+
 */
+
 }
+
 if(st1=="wazeinciia"){
+
 window.Android.showToast("wazeinciia","","");
 }
+
+
 if(st1=="1"){
   window.Android.showToast(st1,st2,st3);
 }
+
+
+
+
+
+
   
     }
+
+
+
 //document.getElementById("demo").innerHTML = "okkkkkkkkkkk";
 showAndroidToast("coorde","","","");
 if(vstxnode==""){
  vstxnode=showAndroidToast("btaccionuser","","","");
   
 }
+
 vndhijo=window.Android.showToast("nodeh",vndpadre,vndhijo);
+
 vnodelat=window.Android.showToast("latm",vndpadre,vndhijo);
 vnodelng=window.Android.showToast("lngm",vndpadre,vndhijo);
+
+
 vnlatdirecion=window.Android.showToast("latdirecion",vndpadre,vndhijo);
 vnlngdirecion=window.Android.showToast("lngdirecion",vndpadre,vndhijo);
 //if(ndhijo!=""){
@@ -232,7 +338,9 @@ vnlngdirecion=window.Android.showToast("lngdirecion",vndpadre,vndhijo);
   var escrib="hijo "+ vndhijo+ " lat "+vnodelat+" lng " +vnodelng;
   escribetexto(escrib);
 //}
+
 /*
+
  
 function myFunction(){}
 function udatemap(){}
@@ -240,6 +348,10 @@ function androiniciawaze(){}
    
 */
 //src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCV4ya46Yoag-iGeJb5SUwZ2q1Irx0UjnU&callback=initMap"
+
+
+
+
 //showAndroidToast("wazeinciia","","","");
     </script>
    <script async defer
