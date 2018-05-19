@@ -219,9 +219,7 @@ function btaccionuser(){
 //location.href = "http://www.cnn.com";
 
 
-
-
-setInterval(function(){ udatemap();}, 3000);
+setTimeout(function(){ udatemap(); }, 1000);
 
 
 
